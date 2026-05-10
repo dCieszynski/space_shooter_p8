@@ -1,12 +1,12 @@
 pico-8 cartridge // http://www.pico-8.com
 version 43
 __lua__
-#include .\main.lua
-#include .\world.lua
-#include .\entity.lua
-#include .\player.lua
-#include .\bullet.lua
-#include .\enemy.lua
+#include main.lua
+#include world.lua
+#include entity.lua
+#include player.lua
+#include bullet.lua
+#include enemy.lua
 __gfx__
 00000000000000000000000008000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00000000000880000000000088088088000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
