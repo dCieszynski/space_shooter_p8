@@ -2,6 +2,7 @@ pico-8 cartridge // http://www.pico-8.com
 version 43
 __lua__
 #include main.lua
+#include hud.lua
 #include world.lua
 #include entity.lua
 #include player.lua
