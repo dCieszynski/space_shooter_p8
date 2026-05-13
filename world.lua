@@ -33,7 +33,7 @@ end
 
 function world:draw()
 	for e in all(self.entities) do
-			if e.alive then e:draw() end
+			if e.alive and not e.world_entity then e:draw() end
 	end
 end
 
