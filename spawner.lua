@@ -1,7 +1,6 @@
 spawner = entity:new({
 	spawn_rate = 60,
 	timer = 0,
-	enemy_type = 3,
 	world_entity = true,
 })
 
@@ -21,9 +20,7 @@ function spawner:update()
 end
 
 function spawner:spawn_enemy()
-	the_world:add_entity(enemy:new({
-		x = flr(rnd(120)),
-		y = 0,
-		sprite = self.enemy_type,
-	}))
+	local types = {enemy, enemy_basic, enemy_strafe}
+	local t = types[flr(rnd(#types))+1]
+	the_world:add_entity(t:new({x=flr(rnd(120)), y=-8}))
 end
