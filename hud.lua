@@ -10,7 +10,7 @@ function hud:new(obj)
 end
 
 function hud:draw()
-	print("Score: "..self.score, 1, 1, 7)
+	print("score: "..self.score, 1, 1, 7)
 end
 
 function hud:add_score(pts)
