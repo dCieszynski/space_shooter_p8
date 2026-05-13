@@ -2,6 +2,7 @@ enemy = entity:new({
 	speed=1,
 	dir=1,
 	is_enemy=true,
+	sprite=3
 })
 
 function enemy:new(obj)

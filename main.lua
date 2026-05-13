@@ -2,9 +2,7 @@
 function _init()
 	the_world = world:new()
 	the_hud = hud:new()
-	the_player = player:new({x=64, y=120, sprite=1})
-	the_world:add_entity(the_player)
-	the_spawner = spawner:new({spawn_rate=120, enemy_type=3})
+	the_spawner = spawner:new({spawn_rate=120})
 	the_world:add_entity(the_spawner)
 end
 
