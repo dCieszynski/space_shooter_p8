@@ -18,6 +18,7 @@ function world:update()
   		for b in all(self.entities) do
    		if b.alive and b.is_bullet and e:overlaps(b) then
     	 	e.alive = false
+			the_hud:add_score(10)
       	b.alive = false
     	end
   	end
