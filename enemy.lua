@@ -13,6 +13,7 @@ end
 
 function enemy:update()
 		self.y += self.dir*self.speed
+		if self.y > 136 then self.alive = false end
 end
 
 function enemy:draw()
